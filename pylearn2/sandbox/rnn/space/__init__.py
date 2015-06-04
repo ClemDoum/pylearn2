@@ -77,7 +77,7 @@ class SequenceSpace(space.CompositeSpace):
                     space=space.space),
                 batch, 0)
         else:
-            NotImplementedError("Can't convert SequenceSpace Theano variables")
+            raise NotImplementedError("Can't convert SequenceSpace Theano variables")
         return rval
 
 
